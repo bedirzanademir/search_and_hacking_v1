@@ -1,5 +1,5 @@
 # -*- coding: cp1254 -*-
-#BEDİR ZANA DEMİR
+#BEDIR ZANA DEMIR
 #29.05.2017
 
 import socket
