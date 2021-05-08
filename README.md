@@ -1,4 +1,4 @@
-# Search And Hacking v1.0
+# traveller.ftp v1.0
 Rastgele IP adresi üretir. Ürettiği IP adresi aktif ise FTP portunu BruteForce ile kırmaya çalışır.
 Ürettiği ancak olumsuz sonuç aldığı IP adreslerini not_found.txt dosyasına kaydeder. Böylece aynı IP adresini ikinci kez oluşturmaz.
 ## İndir
